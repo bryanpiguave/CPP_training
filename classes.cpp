@@ -21,9 +21,14 @@ private:
 
 class German_dog : public Dog{
     public:
-        German_dog(string new_name, int new_age) : Dog(new_name, new_age){
-
-        }
+        German_dog(string new_name, int new_age) : Dog(new_name, new_age){}
+        void output(){
+        cout << "Dog name is: "<<name<<endl;    
+        cout << "Dog gender is: "<<gender<<endl;   
+        cout << "Dog age is: "<<age<<endl;
+        cout << "Dog size is: "<<size<<endl;
+        cout << "Is dog healthy: " <<healthy<<endl;
+        cout << "But this is german" << endl;}
 };
 
 
